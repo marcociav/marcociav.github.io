@@ -12,9 +12,6 @@ export function Portfolio() {
                 <Section 
                     id="tech-products-container"
                     title="Tech Products"
-                    style={{
-                        top: "max(15vh, 150px)"
-                    }}
                 >
                     <SubSection 
                         title="Lango"
@@ -39,9 +36,6 @@ export function Portfolio() {
                 <Section
                     id="accomplishments-container"
                     title="Accomplishments"
-                    style={{
-                        top: "max(60vh, 600px)"
-                    }}
                 >
                     <SubSection 
                         title="Education"
@@ -54,6 +48,19 @@ export function Portfolio() {
                             title="On the training of sparse and dense deep neural networks: less parameters, same performance"
                             description="Training deep neural networks in reciprocal space."
                             link="https://arxiv.org/abs/2106.09021"
+                        />
+                    </SubSection>
+                </Section>
+                <Section
+                    id="experience-section"
+                    title="Experience"
+                >
+                    <SubSection
+                        title="ML Engineer / Data Scientist"
+                    >
+                        <SubList
+                            title={"Jan 2021 - Present"}
+                            description={`Developing and deploying Machine Learning models to predict production lead time in manufacturing.\nDeveloping KPIs and visualizations to drive operational decisions via data.`}
                         />
                     </SubSection>
                 </Section>
@@ -74,7 +81,7 @@ function Banner() {
             </div>
             <div className="description-container">
                 <p className="description">
-                    Data Scientist, Machine Learning Engineer, Physicist, Human
+                    Machine Learning Engineer | Data Scientist | Physicist | Product Guy | Human
                 </p>
             </div>
         </header>
