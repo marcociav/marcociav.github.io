@@ -1,6 +1,6 @@
 import logo from './logo.png';
 import './Components.css';
-import { AiOutlineGithub, AiOutlineLinkedin} from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
 
 
 export function Portfolio() {
@@ -112,7 +112,7 @@ function TextLink(props) {
                 e.target.style.color = "aquamarine"
             }}
             onMouseLeave={(e) => {
-                e.target.style.color = "white"
+                e.target.style.color = "aliceblue"
             }}
         >
             {props.text}
@@ -164,26 +164,18 @@ function SubList(props) {
 function Footer() {
     return (
         <div className="footer-container">
-            <AiOutlineGithub
-                style={{fontSize: "20pt", cursor: "pointer", fill: "white"}}
+            <AiFillGithub
+                style={{fontSize: "20pt", cursor: "pointer", fill: "aliceblue"}}
                 onClick={() => window.open("https://github.com/marcociav/", "_blank")}
-                onMouseEnter={(e) => {
-                    e.target.style.fill = "aquamarine"
-                }}
-                onMouseLeave={(e) => {
-                    e.target.style.fill = "white"
-                }}
+                onMouseOver={(e) => e.target.style.fill="aquamarine"}
+                onMouseOut={(e) => e.target.style.fill="aliceblue"}
             />
-            <AiOutlineLinkedin
-                style={{fontSize: "20pt", cursor: "pointer", fill: "white"}}
+            <AiFillLinkedin
+                style={{fontSize: "20pt", cursor: "pointer", fill: "aliceblue"}}
                 onClick={() => window.open("https://www.linkedin.com/in/marco-ciavarella-mrccv/?locale=en_US", "_blank")}
-                onMouseEnter={(e) => {
-                    e.target.style.fill = "aquamarine"
-                }}
-                onMouseLeave={(e) => {
-                    e.target.style.fill = "white"
-                }}
-             />
+                onMouseOver={(e) => e.target.style.fill="aquamarine"}
+                onMouseOut={(e) => e.target.style.fill="aliceblue"}
+            />
         </div>
     )
 }
